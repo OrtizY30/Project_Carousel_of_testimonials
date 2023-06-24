@@ -1,0 +1,155 @@
+/*Estilos generales*/
+
+*{
+    margin: 0%;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none ;
+    list-style: none;
+}
+
+body{
+    margin: 0px 100px;
+}
+
+/*Estilos de la cebecera*/
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: #252525;
+    
+}
+
+header nav{
+    flex-basis: 25%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #252525;
+}
+header nav ul li a:hover{
+    color: #708090;
+}
+
+/*Estilos de la seccion 1*/
+
+#section1{
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#section1 #title h1{
+    display: block;
+    color: #708090;
+    font-size: 30px;
+}
+#section1 #text p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#section1 #links ul{
+    display: flex ;
+    gap: 40px;
+}
+#section1 #links ul li a{
+    display: block;
+    color: #252525;
+    padding: 8px 30px;
+    width: 100px;
+    font-size: 22px;
+}
+
+#section1 #links ul #contact{
+    background-color: #708090;
+    border-radius: 10px;
+}
+#section1 #links ul li a:hover{
+    color: #708090;
+}
+#section1 #links ul #contact a:hover{
+    box-shadow: inset 0px 0px 6px #252525;
+    border-radius: 10px;
+    color: white;
+}
+
+/*Estilos dpara el carrusel*/
+
+#carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+    height: 70vh;
+}
+
+#carrusel article .img img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+#carrusel article{
+    
+    flex: 1 0 auto;
+    width: 100%;
+    
+    text-align: center;
+    animation: desplacet 20s infinite linear;
+}
+@keyframes desplacet{
+    0%{
+        transform: translateX(0%);
+        
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#carrusel article h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#carrusel article p{
+    font-size: 20px;
+}
+
